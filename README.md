@@ -60,34 +60,7 @@ cd YOUR_PROJECT_FOLDER
 npm install
 ```
 
-### 3. Configure Environment Variables
-
-Create a `.env` or `.env.local` file in the project root.
-
-Example:
-
-```env
-DATABASE_URL="your_postgresql_database_url"
-
-JWT_SECRET="your_secure_jwt_secret"
-
-SMTP_HOST="your_smtp_host"
-SMTP_PORT="587"
-SMTP_USER="your_email"
-SMTP_PASS="your_email_password"
-
-NEXT_PUBLIC_APP_URL="http://localhost:3000"
-```
-
-If Gemini/Google AI features are being used in the project, also add:
-
-```env
-GEMINI_API_KEY="your_gemini_api_key"
-```
-
-> Never upload `.env` or `.env.local` files to GitHub.
-
-### 4. Setup Prisma
+### 3. Setup Prisma
 
 Generate the Prisma client:
 
@@ -107,7 +80,7 @@ If the project includes seed data, run:
 npx prisma db seed
 ```
 
-### 5. Start Development Server
+### 4. Start Development Server
 
 ```bash
 npm run dev
